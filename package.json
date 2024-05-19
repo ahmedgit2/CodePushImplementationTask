@@ -11,8 +11,7 @@
     "apk": "cd android && ./gradlew assembleRelease && cd ..",
     "clean": "cd android && ./gradlew clean && cd ..",
     "release": "npx react-native run-android  --mode release",
-    "codePush_ios": "appcenter codepush release-react -a kareem-indexgroup.net/chef-ruler-client-ios -d Staging -t \"*\"",
-    "codePush": "appcenter codepush release-react -a kareem-indexgroup.net/chef-ruler-client-android -d Staging -t \"*\" &&  appcenter codepush release-react -a kareem-indexgroup.net/chef-ruler-client-ios -d Staging -t \"*\""
+    "codePush": "appcenter codepush release-react -a ahmedmoh6000/CodePushImplementationTask -d Staging -t \"*\" &&  appcenter codepush release-react -a ahmedmoh6000/CodePushImplementationTask-ios -d Staging -t \"*\""
   },
   "dependencies": {
     "appcenter": "5.0.1",
