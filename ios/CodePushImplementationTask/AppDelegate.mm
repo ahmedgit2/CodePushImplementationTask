@@ -2,9 +2,18 @@
 
 #import <React/RCTBundleURLProvider.h>
 
+#import <AppCenterReactNative.h>
+#import <AppCenterReactNativeAnalytics.h>
+#import <AppCenterReactNativeCrashes.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+
+[AppCenterReactNative register];
+[AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];
+[AppCenterReactNativeCrashes registerWithAutomaticProcessing];
+
 {
   self.moduleName = @"CodePushImplementationTask";
   // You can add your custom initial props in the dictionary below.

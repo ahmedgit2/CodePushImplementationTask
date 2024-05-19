@@ -7,11 +7,20 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "apk": "cd android && ./gradlew assembleRelease && cd ..",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "release": "npx react-native run-android  --mode release",
+    "codePush_ios": "appcenter codepush release-react -a kareem-indexgroup.net/chef-ruler-client-ios -d Staging -t \"*\"",
+    "codePush": "appcenter codepush release-react -a kareem-indexgroup.net/chef-ruler-client-android -d Staging -t \"*\" &&  appcenter codepush release-react -a kareem-indexgroup.net/chef-ruler-client-ios -d Staging -t \"*\""
   },
   "dependencies": {
+    "appcenter": "5.0.1",
+    "appcenter-analytics": "5.0.1",
+    "appcenter-crashes": "5.0.1",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-native": "0.74.1",
+    "react-native-code-push": "^8.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
