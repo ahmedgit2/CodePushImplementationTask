@@ -6,6 +6,7 @@ export const TestScreen = () => {
   return (
     <View style={styles.Container}>
       <Text style={styles.Text}> {`Implementing CodePush `} </Text>
+      <Text style={styles.Text}> {`Has Updated `} </Text>
     </View>
   );
 };
