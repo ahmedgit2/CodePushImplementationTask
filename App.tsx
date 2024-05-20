@@ -3,6 +3,7 @@ import {TestScreen} from './src/screens/TestScreen/test-screen';
 import codePush from 'react-native-code-push';
 import {Button, Platform, Text, TouchableOpacity} from 'react-native';
 
+/** control the code push options here */
 const options = {
   updateDialog: {title: 'Do you want to update your app?'},
   installMode: codePush.InstallMode.IMMEDIATE,
